@@ -28,7 +28,7 @@ const Hero = () => {
   return (
     <StyledHero>
       {/* <div className='h-40 w-40 bg-gradient-to-br from-[#915eff] to-[#915eff43] blur-3xl rounded-full absolute bottom-[300px] left-[200px] '></div> */}
-      <div className={`${styles.paddingX}  backdrop:blur-sm absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row `}>
+      <div className={`${styles.paddingX}  backdrop-blur-sm absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row `}>
         <div className=' bg-gradient-to-br lg:w-[1200px] w-full h-[450px] backdrop:blur-lg from-[#ffffff25] to-[#05050521] border-2 border-gray-500 lg:px-8  px-4 py-6 rounded-xl flex flex-row lg:space-x-6 space-x-4'>
 
           <div className=" flex flex-col justify-start items-center mt-6">

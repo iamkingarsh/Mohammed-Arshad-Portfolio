@@ -8,7 +8,9 @@ import { fadeIn, slideIn } from '../utils/motion';
 const SocialIconsCanvas = ({ name, icon, socialLink, }) => {
     return (
         <motion.div variants={slideIn("right", "tween", 0.5, 0.75)}
-            onClick={() => window.open(socialLink, "_blank")}>
+            onClick={() => window.open(socialLink, "_blank")}
+            className='backdrop-blur-sm'
+        >
             <Tilt
                 options={{
                     max: 45,
@@ -44,8 +46,8 @@ class ShowCurrentYear extends React.Component {
 
 function Footer() {
     return (
-        <div >
-            <div className=' backdrop:blur-lg py-6 md:py-2'>
+        <div className='backdrop-blur-sm' >
+            <div className=' py-6 md:py-2'>
                 <h3 className=' text-lg text-center font-bold'>
 
                     I'm Social! Let's Connect and Collaborate

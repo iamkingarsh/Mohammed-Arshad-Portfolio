@@ -21,7 +21,7 @@ function Computers({ isMobile }) {
         />
         <primitive object={computer.scene}
           scale={isMobile ? 0.38 : 0.55}
-          position={isMobile ? [2.5, -3.74, 0] : [2.5, -3.75, 0]}
+          position={isMobile ? [2.5, -3.74, 0] : [2.5, -4, 0]}
           rotation={[0, -0.2, -0.2]}
         />
       </hemisphereLight>
