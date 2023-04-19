@@ -2,7 +2,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, LogoCanvas } from './components/'
 import Gallery from './components/Gallery';
 import React, { useState, useEffect } from 'react';
-import Footer from './components/Footer';
 import { isMobile } from 'react-device-detect';
 import { styles } from './styles';
 import { motion } from "framer-motion";
@@ -78,7 +77,6 @@ const App = () => {
         {/* <Feedbacks /> */}
         <div className='relative z-0'>
           <Contact />
-          <Footer />
           <StarsCanvas />
         </div>
       </div>
