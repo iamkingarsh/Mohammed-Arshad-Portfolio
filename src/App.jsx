@@ -3,8 +3,15 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Stars
 import Gallery from './components/Gallery';
 import React, { useState, useEffect } from 'react';
 import Footer from './components/Footer';
+import { isMobile } from 'react-device-detect';
 
 const App = () => {
+  useEffect(() => {
+    if (isMobile) {
+      window.location.replace("https://m.mohammedarshad.com");
+    }
+  }, []);
+
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
